@@ -1,0 +1,78 @@
+.blog {
+	padding-top:40px;
+	&__inner {}
+	&__item {
+		padding: 30px 0;
+		border-bottom: 1px solid lighten($secondary-font-color,30%);
+	}
+	&__item_without-border{
+		border:none;
+	}
+	&__title a{
+		font-size: 22px;
+		padding: 15px 0;
+	}
+	&__info-date{
+		margin-right: 100px;
+	}
+	&__info-date, &__info-user{
+		display: inline-block;
+		font-family: 'Vollkorn',serif;
+		font-size: 16px;
+		color: #898989;
+		padding: 15px 0;
+	}
+	&__info-date i,&__info-user i{
+		padding-right: 10px;
+	}
+	&__social{
+		margin: 15px 0;
+	}
+	&__social a {
+		font-family: 'Vollkorn',serif;
+		font-size: 20px;
+		color: #898989;
+		margin: 15px 5px;
+	}
+
+	&__img {
+		width: 100%;
+		overflow:hidden;
+	}
+	&__img a{
+		position: relative;
+		display: block;
+
+	}
+
+
+	&__img img{
+		width: 100%;
+		transition: all .3s;
+		transform: scale(1.1);
+	}
+	&__text {
+		font-family: 'Vollkorn',serif;
+		font-size: 18px;
+		color: #898989;
+		padding: 30px 0 0;
+	}
+	&__text p{
+		margin-bottom: 30px;
+	}
+	&__nav{
+		margin-top: 30px;
+	}
+	&__nav a{
+		font-family: 'Vollkorn', serif;
+		font-size: 20px;
+		color: $secondary-font-color;
+		margin: 0 15px;
+		padding: 5px;
+		font-weight: 700;
+	}
+	&__nav a.active{
+		color: $main-font-color;
+		cursor: default;
+	}
+}
