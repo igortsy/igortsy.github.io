@@ -1,0 +1,172 @@
+
+//picture--------------------------------------------
+%suptitle{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+}
+.picture img{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+//about------------------------------------------
+.section-about {
+	position: relative;
+	z-index: 2;
+	padding-top: 0;
+	&__title-box {
+
+	}
+	&__title {
+
+		line-height: 1.2;
+	}
+
+	&__content-title {
+		font-family: "Georgia", sans-serif;
+		font-size: 22px;
+		color: #333;
+		margin-bottom: 25px;
+	}
+	&__content-text p{
+		margin-bottom: 25px;
+	}
+	&__suptitle{
+		@extend %suptitle;
+	}
+}
+
+// features-----------------------------------------
+.features {
+	padding-top: 0;
+	&__inner {
+
+	}
+	&__img img {
+		width: 100%;
+	}
+	&__content {
+
+
+	}
+	&__suptitle {
+		@extend %suptitle;
+		color: #333;
+	}
+	&__title {
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 25px;
+	}
+	&__list {
+		list-style: none;
+	}
+	&__list-item{
+
+	}
+	&__list-item::before {
+		content: '';
+		vertical-align: middle;
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #00996d;
+		margin-right: 5px;
+	}
+}
+
+//team------------------------------------------------------------------------------------------------
+
+.team {
+	&__inner {
+		z-index: 1;
+		position: relative;
+		background-color: rgba(255,255,255,.4);
+		padding: 0 20px;
+		margin: 0 -40px;
+	}
+
+	.slick{
+
+	}
+	.slick-list{
+		padding: 0 0 !important;
+	}
+	.slick-arrow{
+		position: absolute;
+		bottom: 0;
+		width: 30px;
+		height: 20px;
+
+		font-size: 0;
+		border:0;
+		cursor: pointer;
+
+	}
+	.slick-prev{
+		background:transparent url('/img/about/prev.svg') left top/contain no-repeat;
+		right: 40px;
+	}
+	.slick-next{
+		background:transparent url('/img/about/next.svg') left top/contain no-repeat;
+		right: 0;
+	}
+	&__content-suptitle {
+		@extend %suptitle;
+		color: #333;
+	}
+	&__title {
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	&__content-text {
+		margin-bottom: 30px;
+		padding: 0 15px;
+	}
+	&__slides {
+
+		padding-bottom: 40px;
+		position: relative;
+
+		// display: flex;
+
+
+		min-width: 0;
+
+	}
+	&__slides-item {
+
+		padding:  30px;
+	}
+	&__slides-item-img {
+		margin-bottom: 30px;
+	}
+	&__slides-item-img img{
+		max-width: 100%;
+		width: 100%;
+	}
+	&__slides-item-person {
+		font-family: "Georgia",sans-serif;
+		font-size: 30px;
+		color: #00996d;
+		margin-bottom: 15px;
+		font-weight: 700;
+	}
+	&__slides-item-position {
+		font-size: 14px;
+		color: #333;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	.slick__list{
+
+	}
+}

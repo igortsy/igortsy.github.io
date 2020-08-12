@@ -1,0 +1,91 @@
+.section-services {
+	padding-bottom: 0;
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -40px;
+		position: relative;
+		z-index: 1;
+	}
+}
+.top-block {
+		margin-bottom: 70px;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin-bottom: 70px;
+}
+// .top-block-header-box {
+// 	flex: 0 0 50%;
+// 	max-width: 50%;
+// }
+.top-block-suptitle {
+	@extend %suptitle;
+}
+.top-block-title {
+	line-height: 1.2;
+
+}
+.top-block-content {
+
+}
+.top-block-content p{
+
+}
+
+.services-item {
+	padding: 0 40px;
+}
+
+
+//awards---------------------------------------------------------------
+
+.awards {
+	padding-top: 0;
+	padding-bottom: 300px !important;
+	&__suptitle {
+		@extend %suptitle;
+		color: #333;
+	}
+	&__inner {
+
+		z-index: 1;
+		position: relative;
+	}
+	&__title {
+
+		line-height: 1.1;
+	}
+
+	&__content-text {
+		margin-bottom: 40px;
+	}
+	&__content-list {
+		list-style: none;
+		padding-left: 0;
+	}
+	&__content-list-item {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__content-year {
+		padding-right: 20px;
+		margin-right: 20px;
+		border-right: 3px solid #ceeeeb ;
+	}
+	&__content-award {
+		color: #333;
+	}
+	&__content-award-title {
+		font-family: "Georgia", sans-serif;
+		font-size: 22px;
+		font-weight: 700;
+
+	}
+
+
+}
+.plx--low{
+	transform: translateY(-1200px);
+}
