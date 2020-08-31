@@ -1,5 +1,5 @@
 $(function(){
-
+    setTimeout(function(){$('.preloader').css({visibility:'hidden',opacity:0})},1500);
 
     $(window).on('scroll', function() {
         if (window.pageYOffset > 50) {
