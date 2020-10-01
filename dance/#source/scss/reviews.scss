@@ -1,0 +1,131 @@
+.reviews {
+	&__title {
+		margin-bottom: 70px;
+				@media (max-width: 768px){
+			margin-bottom: 40px;
+		}
+	}
+	&__card {
+		background-color: #fff;
+		margin-bottom: 30px;
+		display: flex;
+	}
+	&__img{
+		position: relative;
+		flex: 0 0 auto;
+
+	}
+	&__img img{
+		display: block;
+		max-width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+	}
+	&__social {
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		transform: translateX(-50%);
+		span{
+			padding-left: 10px;
+			&:first-child{
+				padding-left: 0;
+			}
+		}
+		a{
+			color: $limonColor;
+			font-size: 20px;
+			text-decoration: none;
+			transition: $transitionBase;
+			&:hover{
+				color:$highlightedColor;
+			}
+		}
+	}
+	&__content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 20px;
+		padding: 30px 20px;
+		color: $mainFontColor;
+	}
+	&__author {
+		margin-top: 55px;
+		color: $highlightedColor;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	@media (max-width: 576px){
+		&__img img{
+			position: absolute;
+			left: 50%;top: 0%;
+			transform: translateX(-50%);
+			margin: 0 auto;
+			z-index: 2;
+		}
+		&__img {
+			min-height: 300px;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			&:before{
+
+
+			}
+
+		}
+		&__card{
+			flex-direction: column;
+			align-items: center;
+			overflow: hidden;
+		}
+		&__img{
+			&:before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				filter: blur(8px);
+				transform: scale(1.1);
+				z-index: 1;
+
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			}
+		}
+		&__img.first-review{
+			&:before{
+			background-image: url(../img/review-1.jpg);
+		}
+		}
+		&__img.second-review{
+			&:before{
+			background-image: url(../img/review-2.jpg);
+		}
+
+		}
+		&__img.third-review{
+			&:before{
+			background-image: url(../img/review-3.jpg);
+		}
+		}
+		&__img.fourth-review{
+			&:before{
+			background-image: url(../img/review-4.jpg);
+}
+		}
+	&__social{
+		z-index: 3;
+	}
+
+	}
+}

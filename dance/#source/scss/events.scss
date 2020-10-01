@@ -1,0 +1,92 @@
+.events {
+	padding-bottom: 70px;
+	&__title {
+		margin-bottom: 70px;
+		@media (max-width: 768px){
+			margin-bottom: 40px;
+		}
+	}
+	&__card {
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		@media (max-width: 991px){
+			width: 80%;
+			padding-bottom: 30px;
+		}
+	}
+	&__img-link {
+		width: 100%;
+		display: block;
+	}
+	&__img {
+		width: 100%;
+		display: block;
+	}
+	&__bottom {
+		display: flex;
+		width: 100%;
+		flex-grow: 1;
+
+
+		// background-color: $limonColor;
+	}
+	&__date {
+		display: flex;
+		flex-direction: column;
+
+		width: 30%;
+		color: $limonColor;
+		background-color: $mainSectionColor;
+		font-size: 76px;
+		font-weight: 700;
+		line-height:1;
+		text-align: center;
+		padding: 23px 10px;
+		.events__month{
+
+			text-transform: uppercase;
+			display: inline-block;
+			line-height: 1.2;
+			font-size: 28px;
+		}
+	}
+	&__subtitle {
+		width: 70%;
+
+		background-color: $limonColor;
+		padding: 40px 30px;
+		margin-bottom: 0;
+
+		a{
+			color:#18171b;
+			font-size: 30px;
+			line-height:1.2;
+		}
+	}
+	@media (max-width: 768px){
+		&__day{
+			font-size: 40px;
+		}
+		&__month{
+			font-size: 28px;
+		}
+		&__subtitle a{
+			font-size: 24px;
+		}
+	}
+		@media (max-width: 576px){
+			&__bottom{
+				flex-direction: column;
+			}
+			&__date{
+				width: 100%;
+			}
+			&__subtitle{
+				width: 100%;
+			}
+		}
+
+}

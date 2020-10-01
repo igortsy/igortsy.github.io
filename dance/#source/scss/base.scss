@@ -1,0 +1,153 @@
+html{
+	overflow-x: hidden;
+}
+body{
+	font-family: $mainFontColor;
+	background-color: #000;
+	overflow-x: hidden;
+	font-family: 'Roboto',sans-serif;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.section{
+	padding: 85px 0;
+	background-color: $mainSectionColor;
+}
+.no-padding{
+	padding: 0;
+}
+.section--dark{
+	background-color: $darkSectionColor;
+}
+.title{
+	font-size: 76px;
+	font-weight: 700;
+	color: #fff;
+	line-height: .9;
+	text-transform: uppercase;
+}
+@media (max-width: 991px){
+	.title{
+	font-size: 46px;
+	line-height: 1.2;
+	text-align: center;
+}
+}
+.btn{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 25px;
+	background-color: $highlightedColor;
+	color: #fff;
+	letter-spacing: 2px;
+	border:2px solid $highlightedColor;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -20px;
+		width: 30px;
+		height: 200px;
+		background-color: #fff;
+		transform: rotate(-45deg);
+		z-index: -1;
+		transition: $transitionBase;
+
+	}
+	&:hover{
+		color: $limonColor;
+		text-decoration: none;
+		&:after{
+			animation: flashAnimate .3s linear;
+		}
+	}
+
+}
+
+.img-link{
+		display: inline-block;
+		position: relative;
+		transition: $transitionBase;
+		overflow: hidden;
+		height: 100%;
+
+		&:hover span,&:hover:before{
+			//visibility: visible;
+			//opacity: 1;
+		}
+		&:hover img{
+			//transform: scale(1.2);
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			transition: $transitionBase;
+			z-index: 2;
+			background-color: rgba(240,245,75,.25);
+			opacity: 1;
+		}
+
+		span{
+			display: inline-block;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			z-index: 1;
+			left:50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 30px;
+			color: #d91d52;
+			visibility: visible;
+			opacity: 1;
+			transition: $transitionBase;
+
+		}
+		img {
+		display: block;
+		transition: $transitionBase;
+		object-fit:cover;
+		height: 100%;
+		transform:scale(1.2);///
+		}
+		@media (min-width:991px){
+			img{
+				transform: scale(1);
+			}
+			&:hover img{
+				transform: scale(1.2);
+			}
+			span,&:before{
+				visibility: hidden;
+				opacity: 0;
+			}
+			&:hover span,&:hover:before{
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+
+@keyframes flashAnimate{
+	0%{
+		left: -10px;
+		width: 20px;
+	}
+	100%{
+		left:200px;
+		top: -120px;
+	}
+}

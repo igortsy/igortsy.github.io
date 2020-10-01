@@ -1,0 +1,17 @@
+@import "var.scss";
+@import "base.scss";
+@import "preloader.scss";
+@import "header.scss";
+@import "about.scss";
+@import "classes.scss";
+@import "events.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "footer.scss";
+	.object-fit--polyfill {
+    background-size: cover;
+    background-position: center;
+	}
+	.object-fit--polyfill img {
+    opacity: 0;
+	}
