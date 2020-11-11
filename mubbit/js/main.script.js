@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 //--------------------------------------Preloader----------------------------------------------------
     function preloader() {
-        setInterval(() => {
+        setInterval(function(){
             $('#preloader').css('opacity', '0');
 
             $('#preloader').css('visibility','hidden');
