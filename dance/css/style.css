@@ -17,6 +17,7 @@ ul {
 
 .section {
   padding: 85px 0;
+  overflow: hidden;
   background-color: #242329;
 }
 
