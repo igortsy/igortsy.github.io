@@ -934,6 +934,7 @@ ul {
 .footer {
   color: #787488;
   padding: 90px 0 75px;
+  overflow: hidden;
 }
 @media (max-width: 576px) {
   .footer .footer {
