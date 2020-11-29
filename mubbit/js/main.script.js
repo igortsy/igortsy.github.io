@@ -138,8 +138,8 @@ $(document).ready(function() {
 function initMap() {
     // The location of Uluru
     var uluru = {
-        lat: -25.344,
-        lng: 131.036
+        lat: 0.922731276243162,
+        lng: 23.78224481892026
     };
     // The map, centered at Uluru
     var map = new google.maps.Map(document.getElementById('map'), {
